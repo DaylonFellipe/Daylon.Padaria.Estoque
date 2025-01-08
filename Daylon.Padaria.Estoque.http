@@ -1,0 +1,6 @@
+@Daylon.Padaria.Estoque_HostAddress = http://localhost:5205
+
+GET {{Daylon.Padaria.Estoque_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
