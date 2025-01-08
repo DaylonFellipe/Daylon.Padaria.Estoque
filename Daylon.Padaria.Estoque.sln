@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daylon.Padaria.Estoque.Infr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daylon.Padaria.Estoque.Application", "..\Daylon.Padaria.Estoque.Application\Daylon.Padaria.Estoque.Application.csproj", "{95E2F637-5CD9-4DDD-A7F3-FDB41DDB38DC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{6B09F6D1-AE1C-4DC8-93C4-66FCFE2095CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{07328808-423C-49D6-8441-B599C21080F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daylon.Padaria.Estoque.Communication", "..\Daylon.Padaria.Estoque.Communication\Daylon.Padaria.Estoque.Communication.csproj", "{D4EBEC67-3C0E-41D4-BA02-9F6B9AEB0BD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,8 +39,19 @@ Global
 		{95E2F637-5CD9-4DDD-A7F3-FDB41DDB38DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95E2F637-5CD9-4DDD-A7F3-FDB41DDB38DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95E2F637-5CD9-4DDD-A7F3-FDB41DDB38DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4EBEC67-3C0E-41D4-BA02-9F6B9AEB0BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4EBEC67-3C0E-41D4-BA02-9F6B9AEB0BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4EBEC67-3C0E-41D4-BA02-9F6B9AEB0BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4EBEC67-3C0E-41D4-BA02-9F6B9AEB0BD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4110D49B-A748-4DA5-BC16-3FB848987CB6} = {6B09F6D1-AE1C-4DC8-93C4-66FCFE2095CA}
+		{937E394E-72B9-4E24-B0F7-ED9ECE809E99} = {6B09F6D1-AE1C-4DC8-93C4-66FCFE2095CA}
+		{A2F612F7-C96E-4DD1-90D3-D450977AD614} = {6B09F6D1-AE1C-4DC8-93C4-66FCFE2095CA}
+		{95E2F637-5CD9-4DDD-A7F3-FDB41DDB38DC} = {6B09F6D1-AE1C-4DC8-93C4-66FCFE2095CA}
+		{D4EBEC67-3C0E-41D4-BA02-9F6B9AEB0BD8} = {07328808-423C-49D6-8441-B599C21080F0}
 	EndGlobalSection
 EndGlobal
