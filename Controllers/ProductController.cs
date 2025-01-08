@@ -1,7 +1,6 @@
-﻿using Daylon.Padaria.Estoque.Communication;
+﻿using Daylon.Padaria.Estoque.Application.UseCases.Product.Register;
 using Daylon.Padaria.Estoque.Communication.Requests;
 using Daylon.Padaria.Estoque.Communication.Responses;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Daylon.Padaria.Estoque.Controllers
@@ -14,7 +13,11 @@ namespace Daylon.Padaria.Estoque.Controllers
         [ProducesResponseType(typeof(ResponseRegisteredProductJson), StatusCodes.Status201Created)]
         public IActionResult Register(RequestRegisterProductJson request)
         {
-            return Created();
+            var useCase = new RegisterProductUseCase();
+
+            var result = useCase.Execute(request);
+
+            return Created(string.Empty, result);
         }
     }
 }
